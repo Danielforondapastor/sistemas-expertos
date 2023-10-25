@@ -25,6 +25,9 @@ $nombres = array_values($listaParticipantes);
 
 # 2. Mapa mental
 
+![image](https://github.com/Danielforondapastor/sistemas-expertos/assets/95243114/886768c7-2853-48c7-beaa-2995f38bdbed)
+
+
 # 3. Define que es un sistema experto y que tipo de tareas se pueden resolver con él. Pon ejemplos reales de sistemas expertos, que hacen y donde se utilizan.
 
 Un sistema experto es un software creado para imitar la forma en que los seres humanos razonan y aplican su conocimiento en un área específica. Su principal objetivo es solucionar problemas o tomar decisiones dentro de ese campo particular. Estos sistemas son una rama de la inteligencia artificial y se basan en un conjunto de reglas y una base de datos de conocimiento que utilizan para ofrecer recomendaciones o resolver problemas en un dominio de aplicación concreto. Para llegar a sus conclusiones, los sistemas expertos siguen un proceso lógico de inferencia basado en la información disponible y las reglas predefinidas.
@@ -105,4 +108,9 @@ El futuro de los sistemas expertos se ve influenciado positivamente por el auge 
 =>
 (printout t "Es una cebra" crlf))
 
-Para que este codigo imprima jirafa simplemente tenemos que cambiar
+- Para que este codigo imprima jirafa simplemente tenemos que cambiar hechos-iniciales y en vez de tiene-rayas-negras lo dejaremos asi:
+
+(deffacts hechos-iniciales
+(tiene-pelos)
+(tiene-pezugnas)
+(tiene-cuello-largo))
