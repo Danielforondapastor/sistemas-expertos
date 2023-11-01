@@ -1,0 +1,41 @@
+(deffacts hechos-iniciales
+(tiene-accion)
+(tiene-romance)
+(tiene-ciencia-ficcion)
+)
+
+(defrule genero-drama
+(tiene-romance)
+=>
+(assert (es-genero "Drama"))
+)
+
+(defrule genero-comedia
+(tiene-comedia)
+=>
+(assert (es-genero "Comedia"))
+)
+
+(defrule genero-ciencia-ficcion
+(tiene-ciencia-ficcion)
+=>
+(assert (es-genero "Ciencia Ficción"))
+)
+
+(defrule clasificar-romance
+(tiene-romance)
+=>
+(assert (es-genero "Romance"))
+)
+
+# Tabla de Seguimiento:
+
+| Hechos                 | E  | Agenda                 | D  |
+|------------------------|----|------------------------|----|
+| f0 (initial-fact)            |    | drama: f1              |    |
+| f1 (tiene-accion)          |    | pelicula-crimen: f2    |    |
+| f2 (tiene-romance) |    | pelicula-accion: f3    |    |
+| f3 (tiene-escenas-de-accion)          |  |                        |    |
+| f4 (es-drama)              |  |                        |    |
+| f5 (es-accion)              |  |                        |    |
+| f6 (es-crimen)    |    |                        |  |
