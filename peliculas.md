@@ -1,4 +1,4 @@
-deffacts hechos-iniciales
+(deffacts hechos-iniciales
     (es-pelicula)
     (tiene-accion)
     (tiene-romance)
